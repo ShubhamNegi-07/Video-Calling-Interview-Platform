@@ -6,7 +6,7 @@ dotenv.config();
 const app = express();
 
 console.log(process.env.PORT);
-console.log(process.env.DB_URL);
+console.log(process.env.DB_URL123);
 
 app.get("/",(req, res)=>{
     res.status(200).json({ msg: "success from backend 12345678" });
