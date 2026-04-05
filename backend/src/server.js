@@ -7,7 +7,7 @@ console.log(ENV.PORT);
 console.log(ENV.DB_URL);
 
 app.get("/health",(req, res)=>{
-    res.status(200).json({ msg: "api is up and running" });
+    res.status(20.json({ msg: "api is up and running" });
 });
 
-app.listen(ENVORT,() => console.log ("server is running on port:",ENV.PORT));
+app.listen(ENV.PORT,() => console.log ("server is running on port:",ENV.PORT));
