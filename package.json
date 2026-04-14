@@ -1,0 +1,20 @@
+{
+  "name": "video-calling-interview-platform",
+  "version": "1.0.0",
+    "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShubhamNegi-07/Video-Calling-Interview-Platform.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "bugs": {
+    "url": "https://github.com/ShubhamNegi-07/Video-Calling-Interview-Platform/issues"
+  },
+  "homepage": "https://github.com/ShubhamNegi-07/Video-Calling-Interview-Platform#readme"
+}
