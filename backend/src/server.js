@@ -11,7 +11,9 @@ app.get("/health",(req, res)=>{
     res.status(200).json({ msg: "api is up and running" });
 });
 
-
+app.get("/health",(req, res)=>{
+    res.status(200).json({ msg: "this is book endpoint" });
+});
 
 //make our app ready for deployment 
 if (ENV.NODE_ENV === "production") {
