@@ -11,3 +11,15 @@ import { executeCode } from "../lib/piston";
 
 import toast from "react-hot-toast";
 import confetti from "canvas-confetti";
+
+function ProblemPage() {
+  const { id } = useParams();
+  const navigate = useNavigate();
+
+  const [currentProblemId, setCurrentProblemId] = useState("two-sum");
+  const [selectedLanguage, setSelectedLanguage] = useState("javascript");
+  const [code, setCode] = useState(PROBLEMS[currentProblemId].starterCode.javascript);
+  const [output, setOutput] = useState(null);
+  const [isRunning, setIsRunning] = useState(false);
+
+  const currentProblem = PROBLEMS[currentProblemId];
