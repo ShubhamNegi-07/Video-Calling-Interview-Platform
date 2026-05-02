@@ -133,3 +133,18 @@ function HomePage() {
             Powerful features designed to make your coding interviews seamless and productive
           </p>
         </div>
+
+        {/* FEATURES GRID */}
+        <div className="grid md:grid-cols-3 gap-8">
+          {/* Feature 1 */}
+          <div className="card bg-base-100 shadow-xl">
+            <div className="card-body items-center text-center">
+              <div className="size-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
+                <VideoIcon className="size-8 text-primary" />
+              </div>
+              <h3 className="card-title">HD Video Call</h3>
+              <p className="text-base-content/70">
+                Crystal clear video and audio for seamless communication during interviews
+              </p>
+            </div>
+          </div>
