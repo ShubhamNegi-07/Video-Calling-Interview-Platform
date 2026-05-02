@@ -90,3 +90,22 @@ function ProblemPage() {
     setIsRunning(false);
 
     // check if code executed successfully and matches expected output
+
+    if (result.success) {
+      const expectedOutput = currentProblem.expectedOutput[selectedLanguage];
+      const testsPassed = checkIfTestsPassed(result.output, expectedOutput);
+
+      if (testsPassed) {
+        triggerConfetti();
+        toast.success("All tests passed! Great job!");
+      } else {
+        toast.error("Tests failed. Check your output!");
+      }
+    } else {
+      toast.error("Code execution failed!");
+    }
+  };
+
+  return (
+    <div className="h-screen bg-base-100 flex flex-col">
+      <Navbar />
