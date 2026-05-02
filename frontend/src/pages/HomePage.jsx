@@ -81,3 +81,44 @@ function HomePage() {
                 Multi-Language
               </div>
             </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-wrap gap-4">
+              <SignInButton mode="modal">
+                <button className="btn btn-primary btn-lg">
+                  Start Coding Now
+                  <ArrowRightIcon className="size-5" />
+                </button>
+              </SignInButton>
+
+              <button className="btn btn-outline btn-lg">
+                <VideoIcon className="size-5" />
+                Watch Demo
+              </button>
+            </div>
+
+            {/* STATS */}
+            <div className="stats stats-vertical lg:stats-horizontal bg-base-100 shadow-lg">
+              <div className="stat">
+                <div className="stat-value text-primary">10K+</div>
+                <div className="stat-title">Active Users</div>
+              </div>
+              <div className="stat">
+                <div className="stat-value text-secondary">50K+</div>
+                <div className="stat-title">Sessions</div>
+              </div>
+              <div className="stat">
+                <div className="stat-value text-accent">99.9%</div>
+                <div className="stat-title">Uptime</div>
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT IMAGE */}
+          <img
+            src="/hero.png"
+            alt="CodeCollab Platform"
+            className="w-full h-auto rounded-3xl shadow-2xl border-4 border-base-100 hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+      </div>
